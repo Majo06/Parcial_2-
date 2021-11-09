@@ -1,0 +1,14 @@
+﻿@model Parcial_2.Models.Cajero
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>Cajero</h2>
+
+@using (Html.BeginForm("index", "Cajero", FormMethod.Post))
+{
+
+    <label>Escriba el monto</label>
+    @Html.TextBoxFor(a => a.Monto)
+    <input type="submit" class="btn btn-outline-secondary" />
+}
